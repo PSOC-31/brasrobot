@@ -1,0 +1,48 @@
+#######################################
+# Syntax Coloring Map BrasRobot
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+BrasRobot	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+activerMoteurs	KEYWORD2
+desactiverMoteurs	KEYWORD2
+initPosition	KEYWORD2
+finTravail	KEYWORD2
+setAngleBase	KEYWORD2
+setAngleEpaule	KEYWORD2
+setAngleCoude	KEYWORD2
+setAnglePoignet	KEYWORD2
+setAnglePince	KEYWORD2
+setAnglesBECP	KEYWORD2
+lever	KEYWORD2
+baisser	KEYWORD2
+rotationGauche	KEYWORD2
+rotationDroite	KEYWORD2
+ouvrirPince	KEYWORD2
+fermerPince	KEYWORD2
+inclinerHaut	KEYWORD2
+inclinerBas	KEYWORD2
+horizontal	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+SPI_CLOCK_DIV4	LITERAL1
+SPI_CLOCK_DIV16	LITERAL1
+SPI_CLOCK_DIV64	LITERAL1
+SPI_CLOCK_DIV128	LITERAL1
+SPI_CLOCK_DIV2	LITERAL1
+SPI_CLOCK_DIV8	LITERAL1
+SPI_CLOCK_DIV32	LITERAL1
+SPI_CLOCK_DIV64	LITERAL1
+SPI_MODE0	LITERAL1
+SPI_MODE1	LITERAL1
+SPI_MODE2	LITERAL1
+SPI_MODE3	LITERAL1

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="40 40 40" page-drawer="unibot" page-infullview="yes" page-name="unibot" page-width="1920">
+<PageBlocks>
+<Block genus-name="setupData" id="99">
+<Location>
+<X>87</X>
+<Y>183</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="103" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="activerMoteurs" id="103">
+<Location>
+<X>204</X>
+<Y>191</Y>
+</Location>
+<BeforeBlockId>99</BeforeBlockId>
+<AfterBlockId>114</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="104" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="initPosition" id="114">
+<Location>
+<X>204</X>
+<Y>287</Y>
+</Location>
+<BeforeBlockId>103</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="115" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BrasRobot" id="115">
+<Location>
+<X>229</X>
+<Y>292</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="114" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="104">
+<Location>
+<X>229</X>
+<Y>262</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="103" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="declareData" id="98">
+<Location>
+<X>86</X>
+<Y>51</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="101" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="nouveau BrasRobot()" id="101">
+<Location>
+<X>281</X>
+<Y>59</Y>
+</Location>
+<BeforeBlockId>98</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="102" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="BrasRobot" id="102">
+<Location>
+<X>483</X>
+<Y>62</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="101" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="loop" id="100">
+<Location>
+<X>707</X>
+<Y>20</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="137" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="lever" id="137">
+<Location>
+<X>846</X>
+<Y>28</Y>
+</Location>
+<BeforeBlockId>100</BeforeBlockId>
+<AfterBlockId>135</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="138" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="rotationGauche" id="135">
+<Location>
+<X>846</X>
+<Y>124</Y>
+</Location>
+<BeforeBlockId>137</BeforeBlockId>
+<AfterBlockId>125</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="136" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="ouvrirPince" id="125">
+<Location>
+<X>846</X>
+<Y>220</Y>
+</Location>
+<BeforeBlockId>135</BeforeBlockId>
+<AfterBlockId>133</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="126" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="baisser" id="133">
+<Location>
+<X>846</X>
+<Y>316</Y>
+</Location>
+<BeforeBlockId>125</BeforeBlockId>
+<AfterBlockId>119</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="134" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="fermerPince" id="119">
+<Location>
+<X>846</X>
+<Y>412</Y>
+</Location>
+<BeforeBlockId>133</BeforeBlockId>
+<AfterBlockId>237</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="120" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="lever0" id="237">
+<Location>
+<X>846</X>
+<Y>508</Y>
+</Location>
+<BeforeBlockId>119</BeforeBlockId>
+<AfterBlockId>139</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="238" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="rotationDroite" id="139">
+<Location>
+<X>846</X>
+<Y>604</Y>
+</Location>
+<BeforeBlockId>237</BeforeBlockId>
+<AfterBlockId>239</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="140" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="baisser0" id="239">
+<Location>
+<X>846</X>
+<Y>700</Y>
+</Location>
+<BeforeBlockId>139</BeforeBlockId>
+<AfterBlockId>241</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="240" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="ouvrirPince0" id="241">
+<Location>
+<X>846</X>
+<Y>796</Y>
+</Location>
+<BeforeBlockId>239</BeforeBlockId>
+<AfterBlockId>121</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="242" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="finTravail" id="121">
+<Location>
+<X>846</X>
+<Y>892</Y>
+</Location>
+<BeforeBlockId>241</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="122" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BrasRobot" id="122">
+<Location>
+<X>871</X>
+<Y>897</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="121" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="242">
+<Location>
+<X>871</X>
+<Y>867</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="241" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="240">
+<Location>
+<X>871</X>
+<Y>771</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="239" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="140">
+<Location>
+<X>871</X>
+<Y>675</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="139" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="238">
+<Location>
+<X>871</X>
+<Y>579</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="237" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="120">
+<Location>
+<X>871</X>
+<Y>483</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="119" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="134">
+<Location>
+<X>871</X>
+<Y>387</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="133" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="126">
+<Location>
+<X>871</X>
+<Y>291</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="125" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="136">
+<Location>
+<X>871</X>
+<Y>195</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="135" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="BrasRobot" id="138">
+<Location>
+<X>871</X>
+<Y>99</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="137" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>
